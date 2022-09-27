@@ -4,8 +4,10 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev 40201",
-		"start": "node index.js"
+		"build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "test": "echo test"
 	},
 	"dependencies": {
 		"@microsoft/signalr": "^6.0.6"
