@@ -1,0 +1,1 @@
+export interface ILevel { id: string; level: number; levelName: string; progress: number; navigation: boolean; random: boolean; retries: number; collapsed: boolean; questions: { id: string, retries: number }[ ]; }

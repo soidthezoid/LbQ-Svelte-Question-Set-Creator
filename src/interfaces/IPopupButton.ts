@@ -1,0 +1,1 @@
+export interface IPopupButton { label: string; callback?(): void; }

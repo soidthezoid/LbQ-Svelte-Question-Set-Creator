@@ -1,0 +1,1 @@
+export interface ILevelQuestion { id: string; retries: number; }
