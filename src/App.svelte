@@ -96,7 +96,7 @@
     import CreativePanel from "../component/Molecules/CreativePanel.svelte";
     
     let mounted = false;
-    let visListStore = model.visListStore as Record<string, unknown>; // NOTE: WE USE A STORE TO WRAP model.visList SINCE IF A COMPONENT DIRECTLY REFERENCES A VALUE IN AN EXTERNAL FILE IT WON'T BE REACTIVE https://stackoverflow.com/questions/57983689/how-does-svelte-handle-reactivity-inside-imports
+    let visListStore = model.visListStore as Record<string, unknown>; // WRAP model.visList IN STORE=REACTIVE 
     let sortableList: Record<string, unknown>;
     
     /************** TBD: ADOPT SINGLE APPROACH TO COMPONENT CSS OVERRIDES I.E. EITHER PASS IN STYLE OBJECT OR PASS !IMPORTANT TAILWIND CLASSES INTO CLASS PROPERTY ***************/ 
